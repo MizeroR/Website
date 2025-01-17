@@ -12,50 +12,63 @@
       </div> -->
       <header>
         <div>
-            <div class="bg-gray-700 ">
-                <p>About the University</p>
-                <p>Faculties</p>
+            <div class="bg-gray-700 font-sans flex justify-around">
+                <div>
+                    <p>About the University</p>
+                    <p>Faculties</p>
+                </div>
+                <div class="flex space-x-10">
+                    <img src="img/instagram.png" alt="instagram" class="h-2 w-6">
+                    <img src="img/linkedin.png" alt="linkedin" class="h-8 w-8">
+                </div>                
             </div>
             <div>
-                <img src="img/instagram.png" alt="instagram">
-                <img src="img/linkedin.png" alt="linkedin">
+                
             </div>
-            <div>
+            <div class="flex space-x-4">
                 <div>
-                    <h1>U.PORTO</h1>
-                    <h2>UNIVERSIDADE DE PORTO</h2>
+                    <a href="#">U.PORTO</a>
+                    <a href="#">UNIVERSIDADE DE PORTO</a>
                 </div>
                 <div>
-                    <ul>
-                        <li>Study</li>
-                        <li>Research</li>
-                        <li>Innovate</li>
-                        <li>Live</li>
-                        <li>Explore</li>
-                    </ul>
-                    <div>
-                        <p>search</p>
-
-                    </div>
+                    <a href="#">Study</a>
+                    <a href="#">Research</a>
+                    <a href="#">Innovate</a>
+                    <a href="#">Live</a>
+                    <a href="#">Explore</a>
+                    <a href="#">search</a>
                 </div>
-                <div id="photo-slides">
-
+            </div>
+            <div id="photo-slides" class="relative w-96 h-64">
+                <div class="slide active">
+                    <img src="img/estudantes-biblioteca-fadeup-2024.format-jpeg.jpeg" alt="Slide 1" class="w-full h-full object-cover">
                 </div>
+                <div class="slide">
+                    <img src="img/estudantes-feup-2024-igualdade_05_destaque.format-jpeg.jpeg" alt="Slide 2" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="img/gateway-estudantes-uporto.format-jpeg.jpeg" alt="Slide 3" class="w-full h-full object-cover">
+                </div>
+        
+                <!-- Slideshow controls -->
+                <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">←</button>
+                <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full">→</button>
             </div>
         </div>
       </header>
       <main>
-        <div>
-            <div>
-                <h2>Study</h2>
-                <h3>Your future is here!</h3>
-                <p>
-                    Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the 
-                    U.Porto offer unique conditions to those who want to build an academic path of excellence and 
-                    properly valued by the labour market.
-                </p>
+        <div class="upper flex flex-col gap-12">
+            <h1 class="text-5xl text-[#A18A4D]">Study</h1>
+            <div class="left flex gap-12">
+              <p class="text-3xl font-medium w-[1000px]">Your future is here!</p>
+              <p class="text-xl font-light text-[#212529]">
+                Gathering the most complete offer of training programmes in
+                Portugal, the 14 faculties of the U.Porto offer unique conditions
+                to those who want to build an academic path of excellence and
+                properly valued by the labour market.
+              </p>
             </div>
-        </div>
+          </div>
       </main>
       <footer></footer>
 </body>
